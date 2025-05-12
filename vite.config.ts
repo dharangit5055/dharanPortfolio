@@ -10,4 +10,5 @@ export default defineConfig({
     strictPort: true,
   },
   plugins: [react(), tailwindcss(), svgr()],
+  base: "/dharanPortfolio/",
 });

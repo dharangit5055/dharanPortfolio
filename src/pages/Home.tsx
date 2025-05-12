@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../context/ThemeContext";
@@ -6,6 +6,10 @@ import { DharanImg } from "../assets/images/images";
 
 const Home: React.FC = () => {
   const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    console.log(theme);
+  });
 
   return (
     <section className="min-h-screen bg-gray-50 dark:bg-gray-800 flex items-center transition-colors duration-300">
