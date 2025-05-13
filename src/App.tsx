@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/dharanPortfolio">
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">
